@@ -1,0 +1,23 @@
+[project]
+name = "kappa-eta-gpu"
+version = "0.1.0"
+description = "GPU acceleration of distance-based regressors on Apple Silicon"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mlx>=0.22.0",
+    "numpy>=2.0",
+    "pandas>=2.0",
+    "scikit-learn>=1.5",
+    "numba>=0.60",
+    "matplotlib>=3.9",
+    "scipy>=1.13",
+    "jupyterlab>=4.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["kappa", "kappa_mlx", "saturation_model"]
